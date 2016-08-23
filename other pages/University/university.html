@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="shortcut icon" href="favicon1.ico" />
+<title>大学概况</title>
+<style>
+		
+#div1 {
+		background-color:#690;
+		position:relative;
+		margin:auto;
+		border:0px solid #06C;
+		height:500px;
+		width:750px;
+		top:25px;	
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		overflow:hidden;
+}
+#div1 .left{
+		border:0px solid #000;
+		position:absolute;
+		height:500px;
+		width:150px;
+		float:left;
+		box-shadow:-2px 0 2px #FFF, /*左边阴影*/  
+    2px 0 2px #FFF, /*右边阴影*/  
+    0 -2px 2px #FFF, /*顶部阴影*/  
+    0 2px 2px #FFF; /*底边阴影*/ 
+		
+}
+#div1 .left ul {
+		border:0px solid #F06;
+		list-style:none;
+		position:absolute;
+    margin-left:20px;				
+		padding:1px;
+		width:114px;
+		display:block;
+}
+
+.left ul li {
+		border:0px solid #F06;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		font-size:20px;
+		font-family:"Arial Unicode MS";			
+		height:80px;
+		margin-top:12px;
+		margin-bottom:13px;	
+		
+		box-shadow:-2px 0 2px #FFF, /*左边阴影*/  
+    0px 0 0px #FFF, /*右边阴影*/  
+    0 -0px 0px #FFF, /*顶部阴影*/  
+    0 0px 0px #FFF; /*底边阴影*/
+}
+#li11 {
+		background:url(../../images/University/Un_111.jpg);
+}
+#li22 {
+		background:url(../../images/University/Un_122.jpg);
+}
+#li33 {
+		background:url(../../images/University/Un_133.jpg);
+}
+#ta1 li{
+		color:#FFF;
+		padding-left:20px;
+		line-height:80px;
+		cursor: pointer;		
+}
+
+#ta1 li.cur {
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		box-shadow:-4px 0 4px #FFF, /*左边阴影*/  
+    4px 0 4px #FFF, /*右边阴影*/  
+    0 -4px 4px #FFF, /*顶部阴影*/  
+    0 4px 4px #FFF; /*底边阴影*/
+}
+#ta2{
+		border:0px solid #999;
+		position:absolute;
+		width:150px;
+		height:185px;
+	  bottom:0px;
+		padding:0px;
+		box-shadow:-0px 0 0px #FFF, /*左边阴影*/  
+    2px 0 2px #FFF, /*右边阴影*/  
+    0 0px 0px #FFF, /*顶部阴影*/  
+    0 0px 0px #FFF; /*底边阴影*/ 
+		
+   
+}
+#ta2 p{
+		display:block;
+		font-size:20px;
+		color:rgb(255,255,255);
+		font-family:hakuyoxingshu7000;
+		margin-top:-5px;
+		padding-left:30px;
+				
+}
+
+#div1 .right{
+		border:0px solid #90F;
+		width:590px;
+		height:500px;
+		float:right;
+		margin-top:6px;
+		margin-right:15px;
+}
+#div1 .right li {
+		border:0px solid #CC6;
+		list-style:none;
+		margin:3px;
+		width:520px;
+		height:470px;
+		display:none;
+		overflow:hidden;
+		
+}
+#div1 .right .l1 .l1-l1 {
+		border:0px solid #666;
+		width:520px;
+		height:320px;	
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		margin-bottom:10px;
+}
+#p1  {
+		border:0px solid #FFF;
+		width:520px;
+		height:470px;
+		float:left;
+}
+#p1 p {
+		color:#FFF;
+		font-size:20px;
+		line-height:30px;
+		font-family:"华文行楷";
+}
+
+#p2 {
+		border:0px solid #FFF;
+		width:520px;
+		height:470px;
+		float:left;
+}
+#p2 p {
+		color:#FFF;
+		font-size:20px;
+		line-height:30px;
+		font-family:"华文行楷";
+}
+
+#p3 {
+		border:0px solid #FFF;
+		width:520px;
+		height:470px;
+		float:left;
+}
+#p3 p {
+		color:#FFF;
+		font-size:20px;
+		line-height:30px;
+		font-family:"华文行楷";
+}
+#Img3 {
+		float:right;
+				
+}
+</style>
+<script src="../../js/local products.js"></script>
+<script src="../../js/location.js"></script>
+<script>
+window.onload = function() {
+	Location_one();
+	local_products("span1","p1","Img1");
+	local_products("span2","p2","Img2");
+	local_products("span3","p3","Img3");
+};
+	
+</script>
+</head>
+
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<body>
+ <div class="example">
+    <ul id="nav">
+      <li><a href="../../index.html" >首页</a></li>
+      <li id="now"><a href="#">大学概况</a></li>
+      <li><a href="University.php" >返回上一级</a></li>
+    </ul>
+    
+   <div id="div1">
+      <div class="left">
+        <ul id="ta1">
+          <li id="li11" class="cur" onmouseover="this.style.background='url(../../images/University/Un_11.jpg)'" onmouseout="this.style.background=''"></li>
+          <li id="li22" onmouseover="this.style.background='url(../../images/University/Un_12.jpg)'" onmouseout="this.style.background=''"></li>
+          <li id="li33" onmouseover="this.style.background='url(../../images/University/Un_13.jpg)'" onmouseout="this.style.background=''"></li>
+        </ul>
+        <div id="ta2"><img src="../../images/weixin.gif" /><p>微信二维码</p></div>
+      </div>
+      <div class="right" id="ri1">
+        <ul>
+          <li class="l1" id="l1" style="display:inline-block">
+          	<div id="p1"  style="display:inline-block"><p>&nbsp;&nbsp;宜春学院坐落于江西省宜春市区，前身是1958年成立的宜春大学。2000年1月，经教育部批准，宜春师专、医专、农专和宜春市职工大学合。</p>
+            	<div id="Img1"><a href="http://map.baidu.com/"><img src="../../images/University/Un2.jpg" /></a></div>
+            </div>
+           
+            
+          </li>
+          
+          <li class="l2" id="l2">
+          	<div id="p2"><p>&nbsp;&nbsp;1958年4月，中共宜春地委、行署为了集中力量办好本地区高等学校，决定将原高安师范大专班（即筹建中的南昌专区师专、南昌专区体专，为宜春大学最主体的建校基础）、南昌专区医专、萍乡师专、宜春县办大学、丰城县办大学合并成立宜春大学。
+经省委批准，宜春大学于1958年6月10日正式成立。</p>
+              <div id="Img2"><img src="../../images/University/Un1.jpg" /></div>
+            </div>
+           
+            
+          </li>
+          
+          <li class="l3" id="l3">
+          	<div id="p3"><p>&nbsp;&nbsp;学校设有文学与新闻传播学院、政法学院、经济与管理学院、外国语学院、音乐舞蹈学院、美术与设计学院、数学与计算机科学学院、物理科学与工程技术学院、化学与生物工程学院、生命科学与资源环境学院、医学院、美容医学院、体育学院、继续教育学院、职业技术学院、师范教育学院、锂电新能源学院、马克思主义学院、高安校区等19个教学院，6个校级研究所，现有50余个本科专业，拥有国家级特色专业2个，省级重点学科5个、省级重点实验室1个、省高校重点实验室1个、省高校实验教学示范中心3个、省级特色专业8个、博士后科研工作站1个。</p>
+            	<div id="Img3"><img src="../../images/University/Un.jpg" /></div>
+            </div>
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+  </div>
+</div></body>
+</html>

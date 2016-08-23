@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+#div1 .right .l3 .nav2{
+		float:left;
+		border:0px solid #FFF;
+		width:190px;
+		height:145px;	
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		margin-bottom:5px;
+		
+}
+#div1 .right .l3 .nav2 div {
+		border:0px solid #000;
+		background:url(../images/kuang.gif) no-repeat;
+		height:40px;
+		width:80px;
+		margin:5px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;	
+}
+#nav2 div{
+	float:left;
+  width: 15px;
+	height: 15px;
+	line-height:40px;
+  -moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius:15px;
+	color:#693;
+	font-size:18px;
+	font-family:"Arial Unicode MS";
+	padding-left:20px;
+	cursor: pointer;
+			
+}
+#nav2 div.cur {
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		box-shadow:-4px 0 4px #FFF, /*左边阴影*/  
+    4px 0 4px #FFF, /*右边阴影*/  
+    0 -4px 4px #FFF, /*顶部阴影*/  
+    0 4px 4px #FFF; /*底边阴影*/ 
+}
+
+#div1 .right .l3 .p3{
+		float:right;
+		border:0px solid #666;
+		width:320px;
+		height:500px;
+		box-shadow:-2px 0 2px #FFF, /*左边阴影*/  
+    2px 0 2px #FFF, /*右边阴影*/  
+    0 -2px 2px #FFF, /*顶部阴影*/  
+    0 2px 2px #FFF; /*底边阴影*/  
+}
+#div1 .right .l3 .p3 div {
+		
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		display:none;
+}
+#div1 .right .l3 #l3-l3{
+		border:0px solid #000;
+		width:190px;
+		height:320px;
+		float:left;
+		
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+}
+#div1 .right .l3 #l3-l3 div {
+		display:none;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+}
