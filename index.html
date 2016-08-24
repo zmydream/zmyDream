@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="shortcut icon" href="favicon1.ico"/>
+    <link rel="stylesheet" type="text/css" href="无缝滚动图片/image.css"/>
+    <script type="text/javascript" src="scripts/jquery-2.2.3.min.js"></script>
+    <title>My web</title>
+    <style>	
+      #nav:hover {
+	      height:190px;
+      }
+		</style>
+</head>
+<body>
+<div class="example">
+	<ul id="nav">
+    <li><a href="index.html" >首页</a></li>
+    <li><a href="other pages/Hometown/Hometown.html">我的家乡</a>
+      <div id="nav11">
+        <ul>
+          <li><a href="other pages/Hometown/location.html">家乡概况</a></li>
+          <li><a href="other pages/Hometown/Food.html">家乡美食</a></li>
+          <li><a href="other pages/Hometown/local products.html">家乡特产</a></li>
+          <li><a href="#">家乡......</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="other pages/University/University.html">我的大学</a>
+      <div id="nav11">
+        <ul>
+          <li><a href="other pages/University/university1.html">大学概况</a></li>
+          <li><a href="other pages/University/university_environment.html">绿色校园</a></li>
+          <li><a href="#">大学室友</a></li>
+          <li><a href="#">未完待续....</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="other pages/Travel/Travel.html">大学游过的地方</a>
+      <div id="nav11">
+        <ul>
+          <li><a href="#">湖南长沙</a></li>
+          <li><a href="#">北京</a></li>
+          <li><a href="#">桂林</a></li>
+          <li><a href="#">杭州绍兴</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="#">关于</a></li>
+    <li><a href="admin/login.html">去踩踩</a></li>
+    <li class="pad"></li>
+	</ul>
+        
+<div class="zzsc-container">
+	<div class="zzsc-content">
+		<div class="slider two">
+		  <a href="other pages/Hometown/Hometown.html"><img src="images/beijj21.jpg" /></a>
+		</div>
+		<div class="slider three">
+		  <a href="other pages/University/University.html"><img src="images/University/Un_12_1.jpg" /></a>
+		</div>
+		<div class="slider four">
+		  <div class="related">
+				<h3>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. <br /><br />不支持IE8及以下浏览器。</h3>
+			</div>
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" id="previous" version="1.1" viewBox="0 0 32 32" xml:space="preserve">
+		  <path d="M7.701,14.276l9.586-9.585c0.879-0.878,2.317-0.878,3.195,0l0.801,0.8c0.878,0.877,0.878,2.316,0,3.194  L13.968,16l7.315,7.315c0.878,0.878,0.878,2.317,0,3.194l-0.801,0.8c-0.878,0.879-2.316,0.879-3.195,0l-9.586-9.587  C7.229,17.252,7.02,16.62,7.054,16C7.02,15.38,7.229,14.748,7.701,14.276z" fill="#FFFFFF"/>
+		</svg>
+
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" id="next" version="1.1" viewBox="0 0 32 32" xml:space="preserve">
+		  <path d="M24.291,14.276L14.705,4.69c-0.878-0.878-2.317-0.878-3.195,0l-0.8,0.8c-0.878,0.877-0.878,2.316,0,3.194  L18.024,16l-7.315,7.315c-0.878,0.878-0.878,2.317,0,3.194l0.8,0.8c0.878,0.879,2.317,0.879,3.195,0l9.586-9.587  c0.472-0.471,0.682-1.103,0.647-1.723C24.973,15.38,24.763,14.748,24.291,14.276z" fill="#FFFFFF"/>
+		</svg>
+	</div>
+	
+</div>
+        
+</div>
+
+<script type="text/javascript">
+	var timer = 0;
+	var elementCount = 0;
+	var firstPos = 0;
+	var lastPos = 0;
+
+	$(function() {
+	  initialiseSlider();
+	  $("#next").click(function() {
+		slideRight();
+	  });
+
+	  $("#previous").click(function() {
+		slideLeft();
+	  });
+	});
+
+	function initialiseSlider() {
+	  $("div.slider").each(function(value) {
+		elementCount += 1;
+		var position = -100 * value;
+		$(this).css("left", position + "%");
+	  });
+
+	  if (elementCount === 1)
+		$("#next").hide();
+	}
+
+	function slideRight() {
+	  $("div.slider").each(function(value) {
+		$(this).addClass("zoomout");
+		var position = parseInt($(this)[0].style.left) + 100;
+
+		if (value === 0)
+		  firstPos = position;
+
+		$(this).css("left", position + "%");
+		timer = setTimeout(removeZoom, 1000);
+	  });
+
+	  console.log(firstPos);
+
+	  if (firstPos !== ((elementCount - 1) * 100)) {
+		$("#next").show();
+		$("#previous").show();
+	  } else
+		$("#next").hide();
+	}
+
+	function slideLeft() {
+	  $("div.slider").each(function(value) {
+		$(this).addClass("zoomout");
+		var position = parseInt($(this)[0].style.left) - 100;
+
+		if (value === (elementCount - 1))
+		  lastPos = position;
+
+		$(this).css("left", position + "%");
+		timer = setTimeout(removeZoom, 1000);
+	  });
+
+	  console.log(lastPos);
+
+	  if (lastPos !== ((elementCount - 1) * -100)) {
+		$("#previous").show();
+		$("#next").show();
+	  } else
+		$("#previous").hide();
+	}
+
+	function removeZoom() {
+	  $("div.slider").each(function() {
+		$(this).removeClass("zoomout");
+	  });
+	}
+</script>
+</body>
+</html>

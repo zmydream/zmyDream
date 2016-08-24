@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>江西上饶概况</title>
+
+<link rel="shortcut icon" href="favicon1.ico" />
+</head>
+<link rel="stylesheet" type="text/css" href="../../scripts/jquery.mCustomScrollbar.min.css">
+<script src="../../scripts/jquery-2.2.3.min.js"></script>
+<script src="../../scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../../scripts/jquery-migrate-1.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<link rel="stylesheet" type="text/css" href="../../css/location-one.css">
+<link rel="stylesheet" type="text/css" href="../../css/location-two.css">
+<link rel="stylesheet" type="text/css" href="../../css/location-three.css">
+<link rel="stylesheet" type="text/css" href="../../css/location-four.css">
+<script src="../../js/location.js"></script>
+<script src="../../js/history_lb.js"></script>
+<script src="../../js/location_1.js"></script>
+<style>
+</style>
+<script>
+if (!$.browser.webkit) {
+
+		$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+		$.mCustomScrollbar.defaults.axis="yx"; //enable 2 axis scrollbars by default
+		
+		$(".container").mCustomScrollbar({theme:"dark"});
+}
+</script>
+
+<script>
+window.onload=function() {
+	Location_one();
+	history_lb();
+	l3();
+	var oIm =document.getElementById("l44");
+	var oImgs=oIm.getElementsByTagName("div");
+	var oNav = document.getElementById("nav3");
+	var oNav3 = oNav.getElementsByTagName("div");
+		for( var i = 0; i < oNav3.length; i++) {
+				oNav3[i].index = i;
+				oNav3[i].onclick = function() {
+				//	alert(this.index);
+					for(var j = 0; j < oImgs.length; j++) {
+						oNav3[j].className = '';
+						oImgs[j].style.display="none";
+					}
+					oNav3[this.index].className = 'cur';
+					oImgs[this.index].style.display="inline-block";
+				}
+			}
+}
+</script>
+
+<body>
+ <div class="example">
+  <ul id="nav">
+      <li><a href="../../index.html" >首页</a></li>
+      <li id="now"><a href="#">江西上饶概况</a></li>
+      <li><a href="Hometown.html" >返回上一级</a></li>
+  </ul>
+  <div id="div1">
+    <div class="left">
+        <ul id="ta1">
+          <li class="cur">上饶地理</li>
+          <li>上饶历史</li>
+          <li>上饶民俗</li>
+          <li>上饶故事</li>
+        </ul>
+        <div id="ta2"><img src="../../images/weixin.gif" /><p>微信二维码</p></div>
+     </div>
+     <div class="right" id ="ri1">
+     		<ul>
+        
+          <li class="l1" id="l1" style="display:inline-block">
+          		<div class="l1-l1">
+              <a href="http://map.baidu.com/?newmap=1&s=s%26wd%3D%E4%B8%8A%E9%A5%B6%E5%B8%82%26c%3D364&from=alamap&tpl=mapcity" target="_blank"><img src="../../images/position.gif" /></a></div>
+              
+          		<div class="p1"><marquee direction=up behavior=scroll scrollamount=6 height:130px onmouseover=this.stop() onmouseout=this.start()><p> &nbsp;&nbsp;<b>上饶</b>位于赣东北，东联浙江、北接安徽、南挺福建，处于长三角经济区、海西经济区、鄱阳湖生态经济区三区交汇处，自古就有“豫章第一门户”和“四省通衢”之称。</p><br/><p>&nbsp;&nbsp;<b>上饶</b>地理形势是两条山脉夹一条大河拥抱中国最大的淡水湖。武夷山脉东北—西南走向，怀玉山脉和鄣公山脉东南—西北走向，两条山脉之间的信江，汇集了140多条支流，由东向西直奔鄱阳湖，背有靠前有沼，风水独占鳌头。当信江从源头奔流而出入鄱阳湖时，就注定了这条贯穿赣东北大地的河流要成为上饶人民的母亲河。</p></marquee>
+               </div>
+          </li>
+          
+          <li class="l2" id="l2">
+          		 <div class="l2-l2" id="l2-l2">
+                	<div style = "display:inline-block"><img src="../../images/history_03.jpg" /></div>
+                	<div><img src="../../images/history_04.jpg" /></div>
+                	<div><img src="../../images/history_01.jpg" /></div>
+                	<div><img src="../../images/history_02.jpg" /></div>
+               </div>
+               <div class="p2" id="p2">
+                  <div style = "display:inline-block"><img src="../../images/history_p1.gif" /></div>
+                  <div><img src="../../images/history_p2.gif" /></div>
+                  <div><img src="../../images/history_p3.gif" /></div>
+                  <div><img src="../../images/history_p4.gif" /></div>
+               </div>
+               <div id="nav1">
+                 <div class="cur">1</div>
+                 <div>2</div>
+                 <div>3</div>
+                 <div>4</div>
+               </div>
+          </li>
+          
+          <li class="l3" id="l3">
+          		<div class="nav2" id="nav2">
+                   <div class="cur">上饶串堂</div>
+                   <div>婺源傩舞</div>
+                   <div>板龙灯</div>
+               </div>
+          		<div class="p3" id="p3">
+              	<div style="display:inline-block"><img src="../../images/location_21.gif" /></div>
+              	<div><img src="../../images/location_22.gif" /></div>
+              	<div><img src="../../images/location_23.gif" /></div>
+              </div>
+              <div id="l3-l3">
+                 <div style="display:inline-block"><img src="../../images/location_11.gif" /></div>
+                 <div><img src="../../images/location_12.gif" /></div>
+                 <div><img src="../../images/location_13.gif" /></div>
+              </div>
+          </li>
+          
+          <li class="l4" id="l4">
+          		<div class="l4-l4" id="l44">
+                <div style="display:inline-block"><img src="../../images/location_s2.gif" /></div>
+                <div><img src="../../images/location_s1.gif" /></div>
+                <div><img src="../../images/location_s3.gif" /></div>
+              </div>
+          		<div class="p4" id="p4">
+              	<div>
+                	<p> <h3 style="text-align:center">双塔故事</h3>&nbsp;&nbsp;&nbsp;&nbsp;<b>在明时</b>，信江河经常发大水，老百姓的生活困苦不堪，为镇住发大水的蛟龙，百姓们修建了<b>见龙塔</b>。后来，他坍塌了，尽管仅存二级，但壮志未消磨。清嘉庆十九年(1814年)，见龙塔又英姿勃发。那年，郡守王赓言率同通判汪正修、上饶知县赖勋在仅存的原塔二层之上重新加建五级，顶层祀奉梓潼帝君神像，易名<b>“奎文塔”</b>。<br/><br/>　&nbsp;&nbsp;<b>潮起潮落</b>，花开花谢，十九世纪初期，嘉庆年间(1796—1820)，奎文塔终于不再孤单，<b>五桂塔在不远处拔地而起</b>，从此双塔相望于江湖。而江湖中关于五桂塔的美丽传说也流传开来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;<b>话说一年朝廷科考取士</b>，有五位进京赴考想搭船赶路的书生，在此相遇。天色渐暗，一时不见便船，便在河边的一块巨石上畅谈，不觉已是天亮。虽然五位初次相识，然而意气相投，约定进京赴考之后，无论科场得意与否，都再来此一聚。后来，也是天公作美，五人都皇榜题名，得中进士。再次聚会，友情自然更加深厚。遂合资在此建塔一座，在附近山上一人栽植一棵桂树，暗喻蟾宫折桂，流芳后世。后人便称此塔为“<b>五桂塔</b>”。<p></p>
+                </div>
+              </div>
+              <div id="nav3">
+              	<div class="cur">1</div>
+                <div>2</div>
+                <div>3</div>
+              </div> 
+          </li>
+          
+        </ul>
+     </div>
+   </div>
+</div>
+</body>
+</html>

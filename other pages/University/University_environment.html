@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>绿色校园</title>
+
+<link rel="shortcut icon" href="favicon1.ico" />
+<style>
+	
+#div1 {
+		border:0px solid #06C;
+		background-color:#690;
+		position:relative;
+		margin:auto;
+		height:500px;
+		width:750px;
+		top:25px;	
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		overflow:hidden;
+}
+#div1 .left{
+		border:0px solid #000;
+		position:absolute;
+		height:500px;
+		width:150px;
+		float:left;
+		box-shadow:-0px 0 0px #FFF, /*左边阴影*/  
+    2px 0 2px #FFF, /*右边阴影*/  
+    0 0px 0px #FFF, /*顶部阴影*/  
+    0 0px 0px #FFF; /*底边阴影*/ 
+		
+		
+}
+#ta1 {
+		border:0px solid #F3F;
+		width:150px;
+		height:315px;
+								
+}
+#ta2{
+		border:0px solid #999;
+		position:absolute;
+		width:150px;
+		height:185px;
+	  bottom:0px;
+		padding:0px;
+		box-shadow:-0px 0 0px #FFF, /*左边阴影*/  
+    2px 0 2px #FFF, /*右边阴影*/  
+    0 0px 0px #FFF, /*顶部阴影*/  
+    0 0px 0px #FFF; /*底边阴影*/ 
+		
+   
+}
+#ta2 p{
+		display:block;
+		font-size:20px;
+		color:rgb(255,255,255);
+		font-family:hakuyoxingshu7000;
+		margin-top:-5px;
+		padding-left:30px;
+				
+}
+
+
+#div1 .right{
+		border:0px solid #F00;
+		width:590px;
+		height:500px;
+		float:right;
+		margin-top:0px;
+		
+}
+
+#sImg ul li {
+		border:0px solid #F06;
+		float:left;
+		list-style:none;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		width:75px;
+		height:75px;
+		margin-right:12px;						
+		box-shadow:-0px 0 0px #FFF, /*左边阴影*/  
+    2px 0 2px #FFF, /*右边阴影*/  
+    0 0px 0px #FFF, /*顶部阴影*/  
+    0 0px 0px #FFF; /*底边阴影*/
+		
+}
+#sImg ul li img {
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+}
+
+#bImg ul {
+		border:0px solid #FF3;
+		list-style:none;
+		width:540px;
+		height:385px;
+		float:right;
+				margin-right:20px;
+}
+
+#bImg ul li {
+		border:0px solid #F06;
+		float:left;
+		list-style:none;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		width:550px;
+		height:385px;
+		box-shadow:-2px 0 2px #FFF, /*左边阴影*/  
+    2px 0 2px #FFF, /*右边阴影*/  
+    0 -2px 2px #FFF, /*顶部阴影*/  
+    0 2px 2px #FFF; /*底边阴影*/ 
+		display:none;
+		
+		
+}
+#bImg ul li img {
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+}
+#sImg li.cur {
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		box-shadow:-5px 0 5px #FFF, /*左边阴影*/  
+    5px 0 5px #FFF, /*右边阴影*/  
+    0 -5px 5px #FFF, /*顶部阴影*/  
+    0 5px 5px #FFF; /*底边阴影*/ 
+}
+</style>
+<script>
+window.onload=function() {
+	romate("li_1");romate("li_2");
+	romate("li_3");romate("li_4");
+	romate("li_5");romate("li_6");
+	
+	var sIm = document.getElementById("sImg");
+	var sImg = sIm.getElementsByTagName("li");
+	
+	var bIm = document.getElementById("bImg");
+	var bImg = bIm.getElementsByTagName("li");
+	for (var i = 0; i < sImg.length; i++) {
+		sImg[i].index = i;
+		sImg[i].onclick=function() {	
+			for(var j = 0; j < bImg.length; j++) {
+				sImg[j].className="";
+				bImg[j].style.display="none";
+			}
+			sImg[this.index].className="cur";
+			bImg[this.index].style.display="inline-block";
+		}
+	}
+}
+</script>
+</head>
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script src="../../js/romate.js"></script>
+<body>
+	<div class="example">
+    <ul id="nav">
+      <li><a href="../../index.html" >首页</a></li>
+      <li id="now"><a href="#">绿色校园</a></li>
+      <li><a href="University.html" >返回上一级</a></li>
+    </ul>
+    <div id="div1">
+    	<div class="left">
+        <div id="ta1">
+        <img src="../../images/University/Un0.jpg" />
+        </div>
+        <div id="ta2"><img src="../../images/weixin.gif" /><p>微信二维码</p></div>
+      </div>
+    
+      <div class="right" id="right">
+        <div id="sImg">
+          <ul>
+            <li class="cur" id="li_1"><img src="../../images/University/Un_en6.jpg" /></li>
+            <li id="li_2"><img src="../../images/University/Un_en1.jpg" /></li>
+            <li id="li_3"><img src="../../images/University/Un_en5.jpg" /></li>
+            <li id="li_4"><img src="../../images/University/Un_en2.jpg" /></li>
+            <li id="li_5"><img src="../../images/University/Un_en4.jpg" /></li>
+            <li id="li_6"><img src="../../images/University/Un_en3.jpg" /></li>
+          </ul>
+        </div>
+        <div id="bImg">
+         <ul>
+            <li style="display:inline-block"><a href="#"><img src="../../images/University/Un_en66.jpg" /></a></li>
+            <li><a href="#"><img src="../../images/University/Un_en11.jpg" /></a></li>
+            <li><a href="#"><img src="../../images/University/Un_en55.jpg"/></a></li>
+            <li><a href="#"><img src="../../images/University/Un_en22.jpg" /></a></li>
+            <li><a href="#"><img src="../../images/University/Un_en44.jpg" /></a></li>
+            <li><a href="#"><img src="../../images/University/Un_en33.jpg" /></a></li>
+         </ul>
+       </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

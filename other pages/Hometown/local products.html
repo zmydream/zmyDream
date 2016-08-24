@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon1.ico" />
+<title>上饶特产</title>
+<style>
+		
+#div1 {
+		background-color:#690;
+		position:relative;
+		margin:auto;
+		border:0px solid #06C;
+		height:500px;
+		width:750px;
+		top:25px;	
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		overflow:hidden;
+}
+#div1 .left{
+		border:0px solid #000;
+		position:absolute;
+		height:500px;
+		width:150px;
+		float:left;
+		box-shadow:-2px 0 2px #FFF, /*左边阴影*/  
+    2px 0 2px #FFF, /*右边阴影*/  
+    0 -2px 2px #FFF, /*顶部阴影*/  
+    0 2px 2px #FFF; /*底边阴影*/ 
+		
+}
+#div1 .left ul {
+		border:0px solid #F06;
+		list-style:none;
+		position:absolute;
+    margin-left:20px;				
+		padding:1px;
+		width:114px;
+		display:block;
+}
+
+.left ul li {
+		border:0px solid #F06;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		font-size:20px;
+		font-family:"Arial Unicode MS";			
+		height:50px;
+		margin-top:12px;
+		margin-bottom:13px;
+}
+
+#ta1 li{
+		color:#6C0;
+		padding-left:20px;
+		line-height:50px;
+		cursor: pointer;		
+}
+
+#ta1 li.cur {
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		box-shadow:-4px 0 4px #FFF, /*左边阴影*/  
+    4px 0 4px #FFF, /*右边阴影*/  
+    0 -4px 4px #FFF, /*顶部阴影*/  
+    0 4px 4px #FFF; /*底边阴影*/
+}
+#ta2{
+		border:0px solid #999;
+		position:absolute;
+		width:150px;
+		height:185px;
+	  bottom:0px;
+		padding:0px;
+		box-shadow:-0px 0 0px #FFF, /*左边阴影*/  
+    2px 0 2px #FFF, /*右边阴影*/  
+    0 0px 0px #FFF, /*顶部阴影*/  
+    0 0px 0px #FFF; /*底边阴影*/ 
+		
+   
+}
+#ta2 p{
+		display:block;
+		font-size:20px;
+		color:rgb(255,255,255);
+		font-family:hakuyoxingshu7000;
+		margin-top:-5px;
+		padding-left:30px;
+				
+}
+
+#div1 .right{
+		border:0px solid #90F;
+		width:590px;
+		height:500px;
+		float:right;
+		margin-top:6px;
+		margin-right:15px;
+}
+#div1 .right li {
+		border:0px solid #CC6;
+		list-style:none;
+		margin:3px;
+		width:520px;
+		height:470px;
+		display:none;
+		overflow:hidden;
+		
+}
+#div1 .right .l1 .l1-l1 {
+		border:0px solid #666;
+		width:520px;
+		height:320px;	
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		border-radius:20px;
+		margin-bottom:10px;
+}
+#p1 {
+		border:0px solid #FFF;
+		width:175px;
+		height:470px;
+		float:left;
+}
+#span1 {
+		border:0px solid #F00;
+		background:url(../../images/location_span0.gif) no-repeat;
+		width:8px;
+		height:30px;
+		float:left;
+		margin-top:210px;
+		cursor: pointer;			
+}
+#Img1 {
+		border:0px solid #000;
+		width:330px;
+		height:470px;
+		float:left;
+}
+#p2 {
+		border:0px solid #FFF;
+		width:175px;
+		height:470px;
+		float:left;
+}
+#span2 {
+		border:0px solid #F00;
+		background:url(../../images/location_span0.gif) no-repeat;
+		width:8px;
+		height:30px;
+		float:left;
+		margin-top:210px;
+		cursor: pointer;	
+}
+#Img2 {
+		border:0px solid #000;
+		width:330px;
+		height:470px;
+		float:left;
+}
+#p3 {
+		border:0px solid #FFF;
+		width:175px;
+		height:470px;
+		float:left;
+}
+#span3 {
+		border:0px solid #F00;
+		background:url(../../images/location_span0.gif) no-repeat;
+		width:8px;
+		height:30px;
+		float:left;
+		margin-top:210px;
+		cursor: pointer;	
+}
+#Img3 {
+		border:0px solid #000;
+		width:330px;
+		height:470px;
+		float:left;
+}
+#p4 {
+		border:0px solid #FFF;
+		width:175px;
+		height:470px;
+		float:left;
+}
+#span4 {
+		border:0px solid #F00;
+		background:url(../../images/location_span0.gif) no-repeat;
+		width:8px;
+		height:30px;
+		float:left;
+		margin-top:210px;
+		cursor: pointer;	
+}
+#Img4 {
+		border:0px solid #000;
+		width:330px;
+		height:470px;
+		float:left;
+}
+</style>
+<script src="../../js/local products.js"></script>
+<script src="../../js/location.js"></script>
+<script>
+window.onload = function() {
+	Location_one();
+	local_products("span1","p1","Img1");
+	local_products("span2","p2","Img2");
+	local_products("span3","p3","Img3");
+	local_products("span4","p4","Img4");
+};
+	
+</script>
+</head>
+
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<body>
+ <div class="example">
+    <ul id="nav">
+      <li><a href="../../index.html" >首页</a></li>
+      <li id="now"><a href="#">上饶特产</a></li>
+      <li><a href="Hometown.html" >返回上一级</a></li>
+    </ul>
+    
+   <div id="div1">
+      <div class="left">
+        <ul id="ta1">
+          <li class="cur" style="background:url(../../images/kuang.gif)">万年贡米</li>
+          <li style="background:url(../../images/kuang.gif)">&nbsp;&nbsp;&nbsp;歙砚</li>
+          <li style="background:url(../../images/kuang.gif)">婺源绿茶</li>
+          <li style="background:url(../../images/kuang.gif)">&nbsp;豆豉果</li>
+        </ul>
+        <div id="ta2"><img src="../../images/weixin.gif" /><p>微信二维码</p></div>
+      </div>
+      <div class="right" id="ri1">
+        <ul>
+          <li class="l1" id="l1" style="display:inline-block">
+          	<div id="p1"  style="display:inline-block"><img src="../../images/location_p1.gif" /></div>
+            <div id ="span1"></div>
+            <div id="Img1"><img src="../../images/location_Imgs1.gif" /></div>
+          </li>
+          
+          <li class="l2" id="l2">
+          	<div id="p2"><img src="../../images/location_p2.gif" /></div>
+            <div id ="span2"></div>
+            <div id="Img2"><img src="../../images/location_Imgs2.gif" /></div>
+          </li>
+          
+          <li class="l3" id="l3">
+          	<div id="p3"><img src="../../images/location_p3.gif" /></div>
+            <div id ="span3"></div>
+            <div id="Img3"><img src="../../images/location_Imgs3.gif" /></div>
+          </li>
+          
+          <li class="l4" id="l4">
+          	<div id="p4"><img src="../../images/location_p4.gif" /></div>
+            <div id ="span4"></div>
+            <div id="Img4"><img src="../../images/location_Imgs4.gif" /></div>
+          </li>
+        </ul>
+      </div>
+  </div>
+</div></body>
+</html>
